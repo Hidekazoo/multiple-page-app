@@ -39,7 +39,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader", "resolve-url-loader"],
       },
       {
         test: /\.scss$/,
@@ -57,6 +57,7 @@ module.exports = {
               },
             },
           },
+          "resolve-url-loader",
           {
             loader: "sass-loader",
           },
@@ -68,6 +69,7 @@ module.exports = {
           {
             loader: "style-loader",
           },
+          "resolve-url-loader",
           {
             loader: "css-loader",
             options: {
