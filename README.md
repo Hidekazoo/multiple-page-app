@@ -30,5 +30,12 @@ Modify webpack.common.js and specify the new screen file in entry and plugins.
       template: "public/index.html",
       filename: "new-page.html",
     }),
+```
+
+## check build file
 
 ```
+docker-compose up -d
+```
+
+access localhost:8000
